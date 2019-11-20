@@ -20,9 +20,11 @@ import java.util.Map;
 public class App
 {
 
+    public static Map<String, Ingredient> ingredients = new HashMap<>();
+
     public static void main( String[] args )
     {
-        Map<String, Ingredient> ingredients = new HashMap<>();
+
 
         try {
 
@@ -56,6 +58,7 @@ public class App
         }*/
 
         ingredients.forEach((k, v) -> System.out.println(k + " : " + v.getPrice() + " €"));
+        Prosciutto e = new Prosciutto("prosciutto");
     }
 
     /**

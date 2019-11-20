@@ -7,7 +7,7 @@ public class Pizza implements PizzaComponent{
 
     private String name;
     private BigDecimal price = BigDecimal.valueOf(0.0);
-    private ArrayList<Ingredient> listIngredients;
+    private ArrayList<Ingredient> listIngredients = new ArrayList<Ingredient>();
 
     public Pizza(String name) { this.name = name; }
 

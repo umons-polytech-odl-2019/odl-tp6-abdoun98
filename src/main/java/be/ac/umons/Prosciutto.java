@@ -4,9 +4,6 @@ public class Prosciutto extends Pizza {
 
     public Prosciutto(String name) {
         super(name);
-
-        Pizza prosciutto = new Pizza(name);
-        Ingredient pate = new Ingredient()
-        prosciutto.addIngredient();
+        addIngredient(App.ingredients.get("Dough"));
     }
 }
