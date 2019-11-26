@@ -6,8 +6,8 @@ import java.util.ArrayList;
 public class Pizza implements PizzaComponent{
 
     private String name;
-    private BigDecimal price = BigDecimal.valueOf(0.0);
-    private ArrayList<Ingredient> listIngredients = new ArrayList<Ingredient>();
+    private BigDecimal price = BigDecimal.valueOf(0.0);  //price = 0 mais en BigDecimal
+    protected ArrayList<Ingredient> listIngredients = new ArrayList<Ingredient>();
 
     public Pizza(String name) { this.name = name; }
 
